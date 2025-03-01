@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Utilisateur</title>
+    <link rel="stylesheet" href="so.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mame Diarra</h2>
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Catégories</a></li>
+            <li><a href="#">Auteurs</a></li>
+            <li><a href="#">Commentaires</a></li>
+            <li><a href="#">Médias Sociaux</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Paramètres</a></li>
+            <li><a href="#">Pages</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="profile">
+            <h1>Profil</h1>
+            <div class="profile-card">
+                <img src="r.jpg" alt="Avatar">
+                <div>
+                    <h3>Mame Diarra</h3>
+                    <p>Admin</p>
+                    <button class="btn" onclick="showPasswordForm()">Mot de passe</button>
+                </div>
+            </div>
+
+            <div id="password-form" class="password-form">
+                <h2>Modifier le mot de passe</h2>
+                <label>Ancien mot de passe</label>
+                <input type="password" placeholder="Ancien mot de passe">
+                <label>Nouveau mot de passe</label>
+                <input type="password" placeholder="Nouveau mot de passe">
+                <label>Confirmer le mot de passe</label>
+                <input type="password" placeholder="Confirmer le mot de passe">
+                <button class="btn"><a href="diarra.html">Enregistrer les modifications</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPasswordForm() {
+            document.getElementById('password-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
