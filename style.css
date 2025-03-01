@@ -1,0 +1,118 @@
+/* Reset général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Mise en page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f4f6;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Panneau gauche */
+.left-panel {
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 40px;
+}
+
+.left-panel img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* Panneau droit */
+.right-panel {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #019875;
+}
+
+/* Liens */
+.links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        padding: 20px;
+    }
+}
